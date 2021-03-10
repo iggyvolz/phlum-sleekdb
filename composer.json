@@ -1,0 +1,35 @@
+{
+    "name": "iggyvolz/phlum-sleekdb",
+    "description": "SleekDB driver for Phlum",
+    "type": "library",
+    "require": {
+        "rakibtg/sleekdb": "dev-master",
+        "iggyvolz/phlum": "dev-main#ffad35729bf4bed971116b455114dc84be181fc2 ",
+        "iggyvolz/classgen": "dev-main",
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phan/phan": "^4.0",
+        "squizlabs/php_codesniffer": "dev-master",
+        "vimeo/psalm": "^4.3",
+        "phpstan/phpstan": "^0.12.80"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Katie Volz",
+            "email": "iggyvolz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "iggyvolz\\phlum\\SleekDB\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "iggyvolz\\phlum\\test\\": "vendor/iggyvolz/phlum/test/"
+        }
+    }
+}
